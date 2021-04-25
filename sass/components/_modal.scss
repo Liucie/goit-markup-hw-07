@@ -16,18 +16,27 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation);
 }
-.modal__btn-close {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
+
   width: 30px;
   height: 30px;
 
-  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: var(--primary-bg-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: fill var(--animation);
+
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 .modal__title {
   margin-bottom: 12px;

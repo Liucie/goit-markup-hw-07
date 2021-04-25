@@ -13,20 +13,20 @@
   border-radius: 50%;
 
   transition: background-color var(--animation);
-}
-.socials__link:hover,
-.socials__link:focus {
-  background-color: var(--accent-color);
-  outline-color: var(--accent-color);
-}
-.socials__link:hover .socials__icon {
-  fill: var(--light-text-color);
-}
-.socials__link:focus .socials__icon {
-  fill: var(--light-text-color);
-  outline-color: var(--accent-color);
-}
 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+  &:hover .socials__icon {
+    fill: var(--light-text-color);
+  }
+  &:focus .socials__icon {
+    fill: var(--light-text-color);
+    outline-color: var(--accent-color);
+  }
+}
 .socials__icon {
   width: 20px;
   height: 20px;

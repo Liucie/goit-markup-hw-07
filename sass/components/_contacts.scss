@@ -16,18 +16,20 @@
   color: var(--secondary-text-color);
 
   transition: color var(--animation);
-}
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-  outline-color: var(--accent-color);
-}
-.contacts__link:hover .contacts__icon {
-  fill: var(--accent-color);
-}
-.contacts__link:focus .contacts__icon {
-  fill: var(--accent-color);
-  outline: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+
+  &:hover .contacts__icon {
+    fill: var(--accent-color);
+  }
+  &:focus .contacts__icon {
+    fill: var(--accent-color);
+    outline: none;
+  }
 }
 .contacts__icon {
   width: 16px;

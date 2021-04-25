@@ -5,9 +5,10 @@
   font-weight: 700;
   line-height: 1.19;
   color: var(--logo-text-color);
-}
-.logo:focus {
-  outline-color: var(--accent-color);
+
+  &:focus {
+    outline-color: var(--accent-color);
+  }
 }
 .logo--accent {
   color: var(--accent-color);
