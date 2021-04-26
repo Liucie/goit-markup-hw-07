@@ -16,10 +16,6 @@
   &:focus {
     outline-color: var(--accent-color);
   }
-
-  &:hover .project__overlay {
-    transform: translateY(-100%);
-  }
 }
 .project__thumb {
   position: relative;
@@ -36,6 +32,10 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform var(--animation);
+
+  .project__link:hover & {
+    transform: translateY(-100%);
+  }
 }
 
 .project__text {

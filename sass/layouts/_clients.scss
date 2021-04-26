@@ -27,15 +27,16 @@
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
   }
-  &:hover .clients__icon {
-    fill: var(--accent-color);
-  }
-  &:focus .clients__icon {
-    fill: var(--accent-color);
-    outline-color: var(--accent-color);
-  }
 }
 .clients__icon {
   fill: var(--primary-icons-color);
   transition: fill var(--animation);
+
+  .clients__link:hover & {
+    fill: var(--accent-color);
+  }
+  .clients__link:focus & {
+    fill: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
 }

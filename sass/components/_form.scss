@@ -35,12 +35,6 @@
     border-color: var(--accent-color);
     outline-color: var(--accent-color);
   }
-  &:focus ~ .form__icon {
-    fill: var(--accent-color);
-  }
-  &:hover ~ .form__icon {
-    fill: var(--accent-color);
-  }
 }
 
 .form__icon {
@@ -52,6 +46,13 @@
   fill: var(--primary-text-color);
 
   transition: fill var(--animation);
+
+  .form__input:focus ~ & {
+    fill: var(--accent-color);
+  }
+  .form__input:hover ~ & {
+    fill: var(--accent-color);
+  }
 }
 
 .form__textarea {
@@ -81,12 +82,6 @@
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-
-  &:checked ~ .form__checkbox-icon {
-    background-color: var(--accent-color);
-    fill: var(--light-text-color);
-    border: none;
-  }
 }
 .form__checkbox-icon {
   margin-right: 7px;
@@ -98,6 +93,12 @@
   border-radius: 10%;
 
   transition: background-color var(--animation), fill var(--animation);
+
+  .form__checkbox:checked ~ & {
+    background-color: var(--accent-color);
+    fill: var(--light-text-color);
+    border: none;
+  }
 }
 
 .form__checkbox-text {

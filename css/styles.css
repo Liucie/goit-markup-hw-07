@@ -235,6 +235,14 @@ body {
   outline-color: var(--accent-color);
 }
 
+.contacts__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill var(--animation);
+}
+
 .contacts__link:hover .contacts__icon {
   fill: var(--accent-color);
 }
@@ -242,14 +250,6 @@ body {
 .contacts__link:focus .contacts__icon {
   fill: var(--accent-color);
   outline: none;
-}
-
-.contacts__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--secondary-text-color);
-  transition: fill var(--animation);
 }
 
 .button {
@@ -294,6 +294,13 @@ body {
   outline-color: var(--accent-color);
 }
 
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-icons-color);
+  transition: fill var(--animation);
+}
+
 .socials__link:hover .socials__icon {
   fill: var(--light-text-color);
 }
@@ -301,13 +308,6 @@ body {
 .socials__link:focus .socials__icon {
   fill: var(--light-text-color);
   outline-color: var(--accent-color);
-}
-
-.socials__icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--primary-icons-color);
-  transition: fill var(--animation);
 }
 
 .address {
@@ -416,10 +416,6 @@ body {
   outline-color: var(--accent-color);
 }
 
-.project__link:hover .project__overlay {
-  transform: translateY(-100%);
-}
-
 .project__thumb {
   position: relative;
   overflow: hidden;
@@ -434,6 +430,10 @@ body {
   color: var(--light-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--animation);
+}
+
+.project__link:hover .project__overlay {
+  transform: translateY(-100%);
 }
 
 .project__text {
@@ -541,14 +541,6 @@ body {
   outline-color: var(--accent-color);
 }
 
-.form__input:focus ~ .form__icon {
-  fill: var(--accent-color);
-}
-
-.form__input:hover ~ .form__icon {
-  fill: var(--accent-color);
-}
-
 .form__icon {
   position: absolute;
   top: 50%;
@@ -557,6 +549,14 @@ body {
   transform: translateY(-50%);
   fill: var(--primary-text-color);
   transition: fill var(--animation);
+}
+
+.form__input:focus ~ .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__input:hover ~ .form__icon {
+  fill: var(--accent-color);
 }
 
 .form__textarea {
@@ -588,12 +588,6 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.form__checkbox:checked ~ .form__checkbox-icon {
-  background-color: var(--accent-color);
-  fill: var(--light-text-color);
-  border: none;
-}
-
 .form__checkbox-icon {
   margin-right: 7px;
   fill: var(--light-text-color);
@@ -601,6 +595,12 @@ body {
   border-color: var(--primary-text-color);
   border-radius: 10%;
   transition: background-color var(--animation), fill var(--animation);
+}
+
+.form__checkbox:checked ~ .form__checkbox-icon {
+  background-color: var(--accent-color);
+  fill: var(--light-text-color);
+  border: none;
 }
 
 .form__checkbox-text {
@@ -805,6 +805,11 @@ body {
   outline-color: var(--accent-color);
 }
 
+.clients__icon {
+  fill: var(--primary-icons-color);
+  transition: fill var(--animation);
+}
+
 .clients__link:hover .clients__icon {
   fill: var(--accent-color);
 }
@@ -812,11 +817,6 @@ body {
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
   outline-color: var(--accent-color);
-}
-
-.clients__icon {
-  fill: var(--primary-icons-color);
-  transition: fill var(--animation);
 }
 
 .footer {

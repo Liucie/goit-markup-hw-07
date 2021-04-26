@@ -19,13 +19,6 @@
     background-color: var(--accent-color);
     outline-color: var(--accent-color);
   }
-  &:hover .socials__icon {
-    fill: var(--light-text-color);
-  }
-  &:focus .socials__icon {
-    fill: var(--light-text-color);
-    outline-color: var(--accent-color);
-  }
 }
 .socials__icon {
   width: 20px;
@@ -33,4 +26,12 @@
   fill: var(--primary-icons-color);
 
   transition: fill var(--animation);
+
+  .socials__link:hover & {
+    fill: var(--light-text-color);
+  }
+  .socials__link:focus & {
+    fill: var(--light-text-color);
+    outline-color: var(--accent-color);
+  }
 }

@@ -22,14 +22,6 @@
     color: var(--accent-color);
     outline-color: var(--accent-color);
   }
-
-  &:hover .contacts__icon {
-    fill: var(--accent-color);
-  }
-  &:focus .contacts__icon {
-    fill: var(--accent-color);
-    outline: none;
-  }
 }
 .contacts__icon {
   width: 16px;
@@ -38,4 +30,12 @@
   fill: var(--secondary-text-color);
 
   transition: fill var(--animation);
+
+  .contacts__link:hover & {
+    fill: var(--accent-color);
+  }
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+    outline: none;
+  }
 }
