@@ -34,8 +34,8 @@ img {
   color: inherit;
 }
 body {
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+  font-family: var(--primary-font-family);
+  letter-spacing: var(--base-letter-spacing);
   color: var(--primary-text-color);
 }
 .visually-hidden {
